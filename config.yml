@@ -1,0 +1,27 @@
+################################################# 训练配置
+# 数据集合配置
+file: "arc"             # ["arc","vasp"]
+batch_size: 256
+train_percent: 0.95
+valid_percent: 0.05
+# retrain
+retrain: False
+retrain_epoch: 0
+# common
+learning_rate: 0.0001
+max_clip: 1.0
+epoch_num: 4000          # [2040,4090]
+# 模型配置
+cutoff: 5.0
+num_rbf: 48
+node_dim: 256
+num_layers: 3
+pair_dim: 128
+sph: [[6,1,0],[4,1,0],[2,1,0]]
+dropout: 0.2            # 数据较少时,dropout有利于valid
+# loss 系数
+E_factor: 1 
+F_factor: 5
+S_factor: 1 
+# other
+save_interval: -1       # 保存间隔 save_interval=-1 不保存
