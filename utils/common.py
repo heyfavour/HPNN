@@ -44,7 +44,7 @@ _config = {
 def read_config():
     file_path = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.abspath(os.path.join(file_path,"..","config.yml"))
-    with open(config_path, 'r') as file:
+    with open(config_path, 'r',encoding="utf-8") as file:
         data = yaml.safe_load(file)
     _config.update(data)
     # ddp 判断
