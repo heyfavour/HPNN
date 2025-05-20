@@ -99,7 +99,7 @@ if __name__ == '__main__':
     scheduler = CosineAnnealingWarmRestarts(optimizer, T_0=batch_count, T_mult=2)
     interval = int(2560/batch_size)
     #######################################################################################################
-    log.info(f"参数总量: {sum(p.numel() for p in model.parameters())}")
+    log.info(f"parameters: {sum(p.numel() for p in model.parameters())}")
     criterion = torch.nn.SmoothL1Loss().to(local_rank)
     log.info(f"criterion: {criterion}")
     train_path = f'./model_pth/{node_dim}_{num_layers}_{pair_dim}_train_{E_factor}E{F_factor}F{S_factor}S.pth'
