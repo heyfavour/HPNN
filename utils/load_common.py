@@ -200,7 +200,7 @@ def init_E_emb(data_list):
     E_0 = np.linalg.lstsq(A, B, rcond=None)[0]
     E_0 = np.around(E_0, decimals=4)
     print("init energy E0")
-    print(E_0)
+    # print(E_0)
     return torch.tensor(E_0)
 
 if __name__ == '__main__':
