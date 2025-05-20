@@ -2,7 +2,7 @@
 
 ## Description
 This repository implements the High-order Pair-reduced Neural Network (HPNN), a machine learning model designed for efficient and accurate atomic simulations. HPNN employs a hierarchical angular interaction scheme with reduced pair dimensions, incorporating spherical harmonics up to l=6 for high-fidelity predictions of atomic energies and forces.
-
+![HPNN.png](data/img/HPNN.png)
 
 
 ## Install
