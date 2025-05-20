@@ -67,4 +67,6 @@ src:[./src]
 python load_data.py
 # single gpu
 python run_amp.py
+# ddp 
+torchrun  --nproc_per_node=N --master_port=29898  run_ddp.py
 ```
