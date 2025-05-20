@@ -48,7 +48,7 @@ src:[./src]
 |      |--256_3_128_train_1E5F1S.pth                    # train best model
 |      |--256_3_128_valid_1E5F1S.pth                    # valid best model
 |--logs
-|      |--XXXXxx_512_3_128_20240301.log                 # log
+|      |--XXXXXX_512_3_128_20240301.log                 # log
 |      |--debug                                         # gpu detail
 |--utils
 |      |--__init__.py
